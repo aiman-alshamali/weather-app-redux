@@ -36,3 +36,44 @@
     transform: rotate(360deg);
   }
 }
+
+@font-face {
+  font-family: marhey;
+  src: url("../public/fonts/Marhey-VariableFont_wght.ttf")
+    format("truetype-variations");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+body {
+  background: linear-gradient(180deg, #2fa254, #3a6073);
+}
+.container-content {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  flex-direction: column;
+}
+.card {
+  width: 100%;
+  background: rgb(28 52 91 / 36%);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 11px 1px rgba(0, 0, 0, 0.05);
+}
+.city-and-date {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.all {
+  display: flex;
+  justify-content: space-around;
+}
+.temp-max-and-min {
+  width: 140px;
+  display: flex;
+  justify-content: space-between;
+}
