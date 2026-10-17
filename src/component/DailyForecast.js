@@ -38,8 +38,6 @@ export default function DailyForecast({ date, temp, icon, description }) {
         {day}
       </Typography>
       <p style={{ marginBottom: "2px", margin: "0" }}>{monthAndDayNumber}</p>
-      {/* <Icon fontSize="medium" style={{ color: "#5697de" }} /> */}
-      {/* <WaterDropOutlinedIcon style={{ fontSize: "30px" }} /> */}
       <img
         src={`https://openweathermap.org/img/wn/${icon}@2x.png`}
         alt="weather"

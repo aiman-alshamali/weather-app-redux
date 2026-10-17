@@ -7,7 +7,6 @@ export default function DetailCard({ icon: Icon, title, value }) {
   return (
     <div className="DetailCard">
       {/* ICON */}
-      {/* <Icon fontSize="medium" style={{ color: "#5697de" }} /> */}
       {Icon && <Icon fontSize="medium" style={{ color: "#5697de" }} />}
       {/* ==== ICON ==== */}
 

@@ -1,6 +1,5 @@
 //STYLE
 import "../style/HourlyForecastCard.css";
-// import { Card } from "@mui/material";
 import { Typography } from "@mui/material";
 import WaterDropOutlinedIcon from "@mui/icons-material/WaterDropOutlined";
 
@@ -14,9 +13,6 @@ export default function HourlyForecastCard({ icon, temp, date, humidity }) {
       <Typography variant="body2" style={{ marginBottom: "3px" }}>
         {time}
       </Typography>
-      {/* <Icon fontSize="medium" style={{ color: "#5697de" }} /> */}
-      {/* <WaterDropOutlinedIcon style={{ fontSize: "30px" }} /> */}
-      {/* {icon && <icon fontSize="medium" style={{ color: "#00070d" }} />} */}
       <img
         src={`https://openweathermap.org/img/wn/${icon}@2x.png`}
         alt="weather"
@@ -31,9 +27,7 @@ export default function HourlyForecastCard({ icon, temp, date, humidity }) {
         style={{
           marginTop: "0px",
           display: "flex",
-          // flexDirection: "column",
           justifyContent: "center",
-          // alignItems: "center",
           gap: "2px",
         }}
       >

@@ -5,19 +5,6 @@ import LocationOnOutlinedIcon from "@mui/icons-material/LocationOnOutlined";
 export default function InputSearsh() {
   return (
     <div style={{ display: "flex", justifyContent: "end", margin: "10px" }}>
-      {/* <Input type="search" /> */}
-      {/* <TextField
-        placeholder="Search city"
-        variant="outlined"
-        style={{ height: "0.5rem" }}
-        InputProps={{
-          startAdornment: (
-            <InputAdornment position="end">
-              <SearchIcon />
-            </InputAdornment>
-          ),
-        }}
-      /> */}
       <InputBase
         sx={{
           backgroundColor: "white",

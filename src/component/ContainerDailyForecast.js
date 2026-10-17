@@ -39,13 +39,6 @@ export default function ContainerDailyForecast() {
             description={item.weather[0].description}
           />
         ))}
-        {/* <DailyForecast />
-        <DailyForecast />
-        <DailyForecast />
-        <DailyForecast />
-        <DailyForecast />
-        <DailyForecast />
-        <DailyForecast /> */}
       </div>
     </div>
   );

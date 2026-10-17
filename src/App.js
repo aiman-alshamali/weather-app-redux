@@ -6,18 +6,10 @@ import { useEffect, useState } from "react";
 // MATERIAL UI
 import { createTheme, ThemeProvider, Container, Grid } from "@mui/material";
 
-//EXTERNAL LIBARARI
-import moment from "moment";
-import { useTranslation } from "react-i18next";
-import "moment/locale/ar"; // Import Arabic locale file
-
 //COMPONENTS
 import WeatherCard from "./component/WeatherCard";
-import DetailCard from "./component/DetailCard";
 import ContainerDetails from "./component/Details";
-import HourlyForecastCard from "./component/HourlyForecast";
 import ContainerHourlyForecast from "./component/ContainerHourlyForecastCard";
-import DailyForecast from "./component/DailyForecast";
 import ContainerDailyForecast from "./component/ContainerDailyForecast";
 import InputSearsh from "./component/InputSearsh";
 import Navbar from "./component/Navbar";
@@ -36,22 +28,6 @@ const theme = createTheme({
 });
 
 function App() {
-  // const dispatch = useDispatch();
-  // const { t, i18n } = useTranslation();
-  // const [locale, setLocale] = useState("ar");
-
-  // HANDEL FUNCATION
-  // function transilationLanguage() {
-  //   if (locale === "ar") {
-  //     i18n.changeLanguage("en");
-  //     moment.locale("en");
-  //     setLocale("en");
-  //   } else {
-  //     i18n.changeLanguage("ar");
-  //     moment.locale("ar");
-  //     setLocale("ar");
-  //   }
-  // }
   const dispatch = useDispatch();
 
   useEffect(() => {
