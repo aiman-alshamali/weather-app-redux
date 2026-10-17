@@ -1,0 +1,31 @@
+.navbar {
+  align-items: center;
+  justify-content: space-between;
+  display: flex;
+  /* background-color: #2fa254; */
+  margin: 10px 0;
+  font-weight: bold;
+}
+.icon {
+  margin-left: 4rem;
+  gap: 10px;
+  display: flex;
+  color: white;
+}
+
+.ul {
+  display: flex;
+  gap: 20px;
+  padding: 15px;
+  list-style: none;
+}
+
+.ul a {
+  color: white;
+  text-decoration: none;
+}
+
+.switch {
+  margin-right: 4rem;
+  color: white;
+}

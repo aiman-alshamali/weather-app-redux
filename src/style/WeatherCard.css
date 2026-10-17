@@ -1,0 +1,31 @@
+.weather-container {
+  height: 100%;
+  color: white;
+  border-radius: 10px;
+}
+.cardd {
+  height: stretch;
+  background: rgb(28 52 91 / 36%);
+  padding: 20px;
+  box-shadow: 0 11px 1px rgba(0, 0, 0, 0.05);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  flex-direction: column;
+}
+
+.city-and-date {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.all {
+  display: flex;
+  justify-content: space-around;
+}
+.temp-max-and-min {
+  width: 140px;
+  display: flex;
+  justify-content: space-between;
+}
