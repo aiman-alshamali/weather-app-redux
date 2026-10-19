@@ -7,27 +7,14 @@ import axios from "axios";
 export const fetchWeather = createAsyncThunk(
   "weatherApi/fetchWeather",
   async () => {
+    const API_KEY = process.env.REACT_APP_WEATHER_API_KEY;
     const response = await axios.get(
-      "https://api.openweathermap.org/data/2.5/weather?lat=14.541&lon=49.1242&appid=6512bb97fd0837f470b3e09663dca097&lang=en",
+      `https://api.openweathermap.org/data/2.5/weather?lat=14.541&lon=49.1242&appid=${API_KEY}&lang=en`,
     );
 
     const responseHourlyForecast = await axios.get(
-      // "https://api.openweathermap.org/data/2.5/forecast?lat=14.541&lon=49.1242&appid=6512bb97fd0837f470b3e09663dca097&units=metric&lang=en",
-      "https://api.openweathermap.org/data/2.5/forecast?lat=14.541&lon=49.1242&units=metric&lang=en&appid=6512bb97fd0837f470b3e09663dca097",
+      `https://api.openweathermap.org/data/2.5/forecast?lat=14.541&lon=49.1242&units=metric&lang=en&appid=${API_KEY}`,
     );
-
-    //     const responseHourlyForecast = await axios.get(
-    //   "https://api.openweathermap.org/data/2.5/forecast",
-    //   {
-    //     params: {
-    //       lat: 14.541,
-    //       lon: 49.1242,
-    //       units: "metric",
-    //       lang: "en",
-    //       appid: process.env.REACT_APP_WEATHER_API_KEY,
-    //     },
-    //   }
-    // );
 
     const name = response.data.name;
     const temp = Math.round(response.data.main.temp - 272.15);

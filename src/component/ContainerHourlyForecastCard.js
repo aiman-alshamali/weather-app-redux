@@ -69,17 +69,6 @@ export default function ContainerHourlyForecast() {
                 humidity={item.main.humidity}
               />
             ))}
-            {/* <HourlyForecastCard
-              icon={weather.hourlyForecast?.[0]?.weather?.[0]?.icon}
-              temp={weather.hourlyForecast?.[0]?.main?.temp}
-              date={weather.hourlyForecast?.[0]?.dt}
-            /> */}
-            {/* <HourlyForecastCard />
-        <HourlyForecastCard />
-        <HourlyForecastCard />
-        <HourlyForecastCard />
-        <HourlyForecastCard />
-        <HourlyForecastCard /> */}
           </div>
         </div>
       )}
